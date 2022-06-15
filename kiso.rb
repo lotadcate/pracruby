@@ -345,3 +345,47 @@ end
 puts "4点獲得したのでゲームを終了します"
 
 # until 修飾子
+point = 1
+point = point + 1 until point > 5
+puts point
+
+# 後置until文
+point = 1
+begin
+  point = point + 1
+      puts point
+end until point > 5
+
+# while文
+point = 1
+while point < 5
+  puts "#{point}" + "点獲得しました"
+  point = point + 1
+end
+
+# while 修飾子
+point = 1
+point = point + 1 while point < 5
+
+# 後置while文
+point = 1
+begin
+  point = point + 1
+      puts point
+end while point < 5
+
+# for文
+drink = ['MILK', 'COFFEE', "WATER"]
+for uxname in drink
+  puts "UX" + uxname
+end
+
+# 多重代入
+drink = {:MILK => "牛乳", :COFFEE => "コーヒー", :WATER => "水"}
+for uxname_en, uxname_jp in drink
+  puts "UX" + "#{uxname_en}"
+  puts "ユーザエクスペリエンス" + "#{uxname_jp}"
+end
+
+
+  
